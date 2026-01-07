@@ -1,6 +1,6 @@
 # PyTorch & ML on AMD Strix Halo (gfx1151)
 
-Get PyTorch, Unsloth, and ML frameworks working on AMD Ryzen AI Max+ 395 (Strix Halo).
+Get PyTorch, Unsloth, and ML frameworks working on AMD Ryzen AI Max+ 395 (Strix Halo). -- Work in progress
 
 > **TL;DR:** Use **kernel 6.17.8-300.fc43** + **PyTorch nightly ROCm 7.1** + `amdgpu.cwsr_enable=0`
 
