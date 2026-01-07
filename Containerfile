@@ -23,9 +23,9 @@ LABEL version="1.0"
 # Install system dependencies
 RUN dnf update -y && \
     dnf install -y \
-        python3.12 \
-        python3.12-pip \
-        python3.12-devel \
+        python3 \
+        python3-pip \
+        python3-devel \
         git \
         wget \
         curl \
@@ -33,13 +33,11 @@ RUN dnf update -y && \
         htop \
         rocminfo \
         rocm-smi \
-        hip-runtime-amd \
+        --skip-unavailable \
         && \
     dnf clean all
 
-# Set Python 3.12 as default
-RUN alternatives --install /usr/bin/python3 python3 /usr/bin/python3.12 1 && \
-    alternatives --install /usr/bin/python python /usr/bin/python3.12 1
+# Python is already default in Fedora 43
 
 # Create app user and directories
 RUN useradd -m -s /bin/bash unsloth && \
@@ -51,7 +49,7 @@ USER unsloth
 WORKDIR /home/unsloth
 
 # Create virtual environment
-RUN python -m venv /home/unsloth/venv
+RUN python3 -m venv /home/unsloth/venv
 
 # Activate venv for all subsequent commands
 ENV PATH="/home/unsloth/venv/bin:$PATH"
