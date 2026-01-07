@@ -23,9 +23,9 @@ LABEL version="1.0"
 # Install system dependencies
 RUN dnf update -y && \
     dnf install -y \
-        python3 \
+        python3.12 \
         python3-pip \
-        python3-devel \
+        python3.12-devel \
         git \
         wget \
         curl \
@@ -37,7 +37,9 @@ RUN dnf update -y && \
         && \
     dnf clean all
 
-# Python is already default in Fedora 43
+# Set Python 3.12 as default
+RUN ln -sf /usr/bin/python3.12 /usr/bin/python3 && \
+    ln -sf /usr/bin/python3.12 /usr/bin/python
 
 # Create app user and directories
 RUN useradd -m -s /bin/bash unsloth && \
