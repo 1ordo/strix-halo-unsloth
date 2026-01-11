@@ -31,7 +31,7 @@ Or use the [pre-built container](#-container).
 
 ## 💻 Tested On
 
-- **Device:** GMKtec NucBox EVO-X2
+- **Device:** GMKtec EVO-X2
 - **APU:** AMD Ryzen AI Max+ 395 (Radeon 8060S, gfx1151)
 - **RAM/VRAM:** 128GB unified / 96GB allocated to GPU
 - **OS:** Fedora 43, Kernel 6.17.8-300.fc43
