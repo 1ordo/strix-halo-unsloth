@@ -154,7 +154,3 @@ podman run -it --rm \
 ---
 
 **Credits:** [cdbb_writes](https://medium.com/@cdbb_writes/from-bare-metal-to-ai-powerhouse-setting-up-amds-strix-halo-a58a1f3bc675) (kernel discovery), [kyuz0](https://github.com/kyuz0), [scottt](https://github.com/scottt), [lhl](https://strixhalo.wiki/)
-
----
-
-**Credits:** [cdbb_writes](https://medium.com/@cdbb_writes/from-bare-metal-to-ai-powerhouse-setting-up-amds-strix-halo-a58a1f3bc675) (kernel discovery), [kyuz0](https://github.com/kyuz0), [scottt](https://github.com/scottt), [lhl](https://strixhalo.wiki/)
